@@ -1,0 +1,17 @@
+.plant{
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 20px;
+  display: block;
+  margin: 20px auto;
+  width: 320px;
+}
+.image{
+  height: 300px;
+  width: 300px;
+  border-radius: 16px;
+  background-size: cover;
+  display: block;
+  margin: auto;
+}

@@ -1,6 +1,17 @@
 .App {
   text-align: center;
 }
+.App-header::before{
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.8)
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -8,18 +19,46 @@
 }
 
 .App-header {
-  background-color: #222;
+  position: relative;
+  background-size: cover;
   height: 150px;
-  padding: 20px;
+  padding: 100px 100px 240px 100px;
   color: white;
 }
-
+.App-header-info{
+  z-index: 5;
+  position: relative;
+}
 .App-title {
   font-size: 1.5em;
 }
 
 .App-intro {
   font-size: large;
+}
+
+body{
+  background: #fdfdfd;
+}
+.input-zip{
+  border: none;
+  border-radius: 16px;
+  height: 32px;
+  width: 240px;
+  display: block;
+  margin: auto;
+}
+.input-submit{
+  border: none;
+  border-radius: 16px;
+  height: 32px;
+  width: 120px;
+  display: block;
+  background: #9070e4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px auto;
 }
 
 @keyframes App-logo-spin {
