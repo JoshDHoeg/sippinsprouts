@@ -11,10 +11,10 @@ class Plant extends Component {
   render() {
     return (
       <div className="plant">
-        <h3>{this.props.plant.simpleName}</h3>
+        <a target="_blank" href={this.props.plant.infoUrl}><h3>{this.props.plant.simpleName}</h3></a>
         <h4>{this.props.plant.name}</h4>
         <div className="image" style={{backgroundImage: 'url(' + this.props.plant.imageUrl + ')'}} />
-
+        <p>{this.props.plant.description}</p>
       </div>
     );
   }
